@@ -141,6 +141,15 @@ Ajoutez vos propres projets ou réalisations dans la section `two` :
 
 #### 8. Section « Me joindre »
 
+Trouvez cette ligne et modifiez-la pour ajouter votre propre adresse e-mail :
+
+```
+<a href="mailto:your-email@example.com?subject=Sujet&body=Votre message ici." class="button primary">`
+```
+
+#### 9. Personnalisation supplémentaire
+
+Vous pouvez personnaliser davantage le site en modifiant les couleurs, les polices, les images, etc. dans le fichier CSS `main.css`.
 
 ---
 
@@ -188,33 +197,11 @@ Ce guide explique comment lier votre site GitHub Pages à votre nom de domaine p
 ### Prérequis
 
 1. Un répertoire GitHub avec un site GitHub Pages configuré (par exemple, `username.github.io` ou `organisation.github.io`).
-2. Un nom de domaine personnalisé enregistré chez Namecheap (par exemple, `votrenom.com`).
+2. Un nom de domaine personnalisé enregistré chez un fournisseur de nom de domaine comme Namecheap (par exemple, `votrenom.com`).
 
-### Étape 1 : Configurer GitHub Pages pour un Domaine Personnalisé
+### Étape 1 : Configurer les Enregistrements DNS sur Namecheap
 
-1. **Accédez à Votre répertoire :**
-   - Allez dans le répertoire GitHub qui héberge votre site GitHub Pages.
-
-2. **Ouvrir les Paramètres du répertoire :**
-   - Cliquez sur l’onglet **Settings** dans votre répertoire.
-
-3. **Faites Défiler jusqu’à GitHub Pages :**
-   - Dans la section **Code and automation**, trouvez le lien **Pages**.
-
-4. **Définir le Domaine Personnalisé :**
-   - Dans le champ **Custom domain**, entrez votre nom de domaine (par exemple, `www.votrenom.com`).
-   - Assurez-vous que la case **Enforce HTTPS** est cochée. Cela garantira des connexions sécurisées.
-
-5. **Créer un Fichier `CNAME` (Optionnel mais Recommandé) :**
-   - Dans le répertoire racine de votre répertoire, créez un fichier nommé `CNAME`.
-   - À l’intérieur du fichier `CNAME`, ajoutez votre nom de domaine personnalisé, par exemple :
-     ```
-     www.votrenom.com
-     ```
-
-### Étape 2 : Configurer les Enregistrements DNS sur Namecheap
-
-Maintenant, nous devons configurer les paramètres DNS sur Namecheap pour pointer votre domaine vers GitHub Pages.
+Nous devons configurer les paramètres DNS sur Namecheap pour pointer votre domaine vers GitHub Pages.
 
 1. **Connectez-vous à Namecheap :**
    - Allez sur [namecheap.com](https://www.namecheap.com) et connectez-vous à votre compte.
@@ -228,21 +215,44 @@ Maintenant, nous devons configurer les paramètres DNS sur Namecheap pour pointe
 
 4. **Ajouter les Enregistrements DNS Suivants :**
 
-   - Sous l'onglet **Advanced DNS**, ajoutez les enregistrements suivants :
+   - Dans la page **Advanced DNS**, ajoutez cliquez sur `ADD NEW RECORD` et ajoutez les enregistrements suivants :
 
    | Type d'Enregistrement | Hôte           | Valeur                          | TTL  |
    |-----------------------|----------------|---------------------------------|------|
-   | CNAME                 | www            | `username.github.io`            | Automatique |
-   | Enregistrement A       | @              | `185.199.108.153`               | Automatique |
-   | Enregistrement A       | @              | `185.199.109.153`               | Automatique |
-   | Enregistrement A       | @              | `185.199.110.153`               | Automatique |
-   | Enregistrement A       | @              | `185.199.111.153`               | Automatique |
+   | CNAME Record                 | www            | `username.github.io`            | Automatique |
+   | A Record       | @              | `185.199.108.153`               | Automatique |
+   | A Record       | @              | `185.199.109.153`               | Automatique |
+   | A Record       | @              | `185.199.110.153`               | Automatique |
+   | A Record       | @              | `185.199.111.153`               | Automatique |
 
    **Explication :**
    - L'enregistrement `CNAME` pointe `www.votrenom.com` vers votre site GitHub Pages.
    - Les enregistrements `A` garantissent que `votrenom.com` (sans `www`) pointe également vers le même site GitHub Pages.
 
 5. **Enregistrer les Modifications** et attendez que les paramètres DNS se propagent. Cela peut prendre de quelques minutes à plusieurs heures.
+
+### Étape 2 : Configurer GitHub Pages pour un Domaine Personnalisé
+
+1. **Accéder à Votre répertoire :**
+   - Allez dans le répertoire GitHub qui héberge votre site GitHub Pages.
+
+2. **Ouvrir les Paramètres du répertoire :**
+   - Cliquez sur l’onglet **Settings** dans votre répertoire.
+
+3. **Aller dans Pages :**
+   - Dans la section **Code and automation**, trouvez le lien **Pages**.
+
+4. **Définir le Domaine Personnalisé :**
+   - Dans le champ **Custom domain**, entrez votre nom de domaine (par exemple, `www.votrenom.com`).
+
+5. **Créer un Fichier `CNAME` (Optionnel mais Recommandé) :**
+   - Dans le répertoire racine de votre répertoire, créez un fichier nommé `CNAME`. Vous pouvez le faire directement sur GitHub.
+   - À l’intérieur du fichier `CNAME`, ajoutez votre nom de domaine personnalisé, par exemple :
+     ```
+     www.votrenom.com
+     ```
+
+
 
 ### Étape 3 : Vérifier la Configuration
 
