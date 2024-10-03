@@ -264,3 +264,16 @@ Maintenant, nous devons configurer les paramètres DNS sur Namecheap pour pointe
 - [Configuration DNS sur Namecheap](https://www.namecheap.com/support/knowledgebase/article.aspx/9776/2237/how-to-set-up-dns-records-for-your-domain-in-namecheap)
 
 Voilà ! Vous avez réussi à lier votre site GitHub Pages au domaine personnalisé `votrenom.com`.
+
+# Critères d'évaluation
+
+- Site Web sur GitHub (30%)
+    - Le site web est hébergé sur GitHub, et le répertoire est accessible.
+    - Les commits sont visibles et montrent un suivi régulier du travail effectué.
+- Respect des étapes et des modifications demandées (60%)
+    - L'étudiant.e a suivi les étapes du ReadMe.
+    - Les sections essentielles ont été complétées et modifiées correctement.
+    - Le contenu du site est pertinent par rapport aux objectifs du projet.
+- Personnalisation avancée (10%)
+    - L'étudiant.e ont personnalisé leur site (changement de couleurs, utilisation d’un autre template, ajustements spécifiques à leurs besoins).
+    - Les modifications vont au-delà des consignes de base, démontrant une initiative supplémentaire.
