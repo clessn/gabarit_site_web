@@ -7,7 +7,7 @@ Bienvenue ! Ce guide vous expliquera comment utiliser GitHub Pages pour créer
 
 - Avoir un compte GitHub. Si vous n'en avez pas encore, créez-en un sur [github.com](https://github.com).
 - Avoir Git installé sur votre ordinateur. Vous pouvez télécharger Git [ici](https://git-scm.com/downloads) si ce n’est pas déjà fait.
-- Un éditeur de texte comme Visual Studio Code ou Notepad++ pour modifier le code HTML.
+- Un éditeur de texte comme RStudio ou Visual Studio Code pour modifier le code HTML.
 
 ---
 
