@@ -2,7 +2,7 @@
 # Créer votre site web avec GitHub Pages
 
 Bienvenue ! Ce guide vous expliquera comment utiliser GitHub Pages pour créer votre propre site web personnel en utilisant un template HTML. Suivez attentivement chaque étape, même si vous n'êtes pas familier avec GitHub.
-
+Faire un commit
 ## Prérequis
 
 - Avoir un compte GitHub. Si vous n'en avez pas encore, créez-en un sur [github.com](https://github.com).
