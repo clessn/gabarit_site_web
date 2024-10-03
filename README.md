@@ -14,20 +14,20 @@ Bienvenue ! Ce guide vous expliquera comment utiliser GitHub Pages pour créer
 ## Étape 1: Créer un répertoire GitHub Pages
 
 1. Connectez-vous à GitHub.
-2. Allez à l'adresse suivante : [https://github.com/clessn/gabarit_site_web](https://github.com/clessn/gabarit_site_web).
-3. Cliquez sur **"Use this template"** (bouton vert en haut à droite).
-4. Dans la section **Repository name**, entrez votre nom d'utilisateur suivi de `.github.io`. Par exemple, si votre nom d'utilisateur est `johndoe`, nommez le dépôt `johndoe.github.io`. Cela est essentiel pour que GitHub reconnaisse votre site.
-5. Assurez-vous que le dépôt est **Public** et cliquez sur **Create repository from template**.
+2. Cliquez sur **"Use this template"** (bouton vert en haut à droite).
+3. Sélectionnez **Create a new repository**
+4. Dans la section **Repository name**, entrez votre nom d'utilisateur suivi de `.github.io`. Par exemple, si votre nom d'utilisateur est `johndoe`, nommez le répertoire `johndoe.github.io`. Cela est essentiel pour que GitHub reconnaisse votre site.
+5. Assurez-vous que le répertoire est **Public** et cliquez sur **Create repository**.
 
 ---
 
-## Étape 2: Cloner le dépôt sur votre ordinateur
+## Étape 2: Cloner le répertoire sur votre ordinateur
 
-Vous allez maintenant copier le dépôt sur votre machine pour pouvoir le modifier.
+Vous allez maintenant copier le répertoire sur votre machine pour pouvoir le modifier.
 
-1. Sur la page de votre dépôt (par exemple, `https://github.com/johndoe/johndoe.github.io`), cliquez sur le bouton vert **Code**.
-2. Copiez le lien du dépôt.
-3. Ouvrez une fenêtre de terminal (ou Git Bash si vous êtes sur Windows) et tapez la commande suivante pour cloner le dépôt :
+1. Sur la page de votre répertoire (par exemple, `https://github.com/johndoe/johndoe.github.io`), cliquez sur le bouton vert **Code**.
+2. Copiez le lien du répertoire.
+3. Ouvrez une fenêtre de terminal (ou Git Bash si vous êtes sur Windows) et tapez la commande suivante pour cloner le répertoire dans un dossier sur votre ordinateur :
    
    ```bash
    git clone https://github.com/username/username.github.io
@@ -45,8 +45,8 @@ Vous allez maintenant copier le dépôt sur votre machine pour pouvoir le modifi
 
 ## Étape 3: Modifier le fichier HTML
 
-Maintenant que vous avez cloné le dépôt sur votre machine, vous pouvez modifier le fichier HTML pour y ajouter vos informations personnelles.
-Vous pouvez utiliser R pour éditer le code HTML, ou tout autre éditeur de texte.
+Maintenant que vous avez cloné le répertoire sur votre machine, vous pouvez modifier le fichier HTML pour y ajouter vos informations personnelles.
+Vous pouvez utiliser RStudio pour éditer le code HTML, ou tout autre éditeur de texte.
 Ouvrez le fichier index.html dans votre éditeur de texte.
 Il est bon de savoir que le nom du fichier index.html est important, car c'est le fichier qui sera affiché par défaut lorsque quelqu'un visite votre site.
 Les navigateurs web cherchent automatiquement un fichier index.html dans le répertoire racine d'un site web.
@@ -61,7 +61,7 @@ Dans le fichier `index.html`, trouvez cette ligne :
 <title>Ce qui va apparaître dans la tab de votre site</title>
 ```
 
-Remplacez le texte entre les balises `<title>` par le titre que vous souhaitez pour votre site. Ce texte apparaîtra dans l'onglet de votre navigateur.
+Remplacez le texte entre les balises `<title>` par le titre que vous souhaitez pour votre site. 1Ce texte apparaîtra dans l'onglet de votre navigateur.
 
 #### 2. Votre nom et description
 
@@ -112,7 +112,7 @@ Modifiez les liens des réseaux sociaux dans la section `footer` :
 ```html
 <a href="https://x.com/MLB/" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
 <a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
-<a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
+<a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
 <a href="#" class="icon brands fa-github"><span class="label">Github</span></a>
 ```
 
@@ -162,7 +162,7 @@ Cela enverra vos modifications sur GitHub.
 
 ## Étape 5: Activer GitHub Pages
 
-1. Allez sur la page de votre dépôt sur GitHub.
+1. Allez sur la page de votre répertoire sur GitHub.
 2. Cliquez sur **Settings**.
 3. Dans la barre latérale gauche, cliquez sur **Pages**.
 4. Sous **Source**, sélectionnez **main** et **root**.
@@ -187,16 +187,16 @@ Ce guide explique comment lier votre site GitHub Pages à votre nom de domaine p
 
 ### Prérequis
 
-1. Un dépôt GitHub avec un site GitHub Pages configuré (par exemple, `username.github.io` ou `organisation.github.io`).
+1. Un répertoire GitHub avec un site GitHub Pages configuré (par exemple, `username.github.io` ou `organisation.github.io`).
 2. Un nom de domaine personnalisé enregistré chez Namecheap (par exemple, `votrenom.com`).
 
 ### Étape 1 : Configurer GitHub Pages pour un Domaine Personnalisé
 
-1. **Accédez à Votre Dépôt :**
-   - Allez dans le dépôt GitHub qui héberge votre site GitHub Pages.
+1. **Accédez à Votre répertoire :**
+   - Allez dans le répertoire GitHub qui héberge votre site GitHub Pages.
 
-2. **Ouvrir les Paramètres du Dépôt :**
-   - Cliquez sur l’onglet **Settings** dans votre dépôt.
+2. **Ouvrir les Paramètres du répertoire :**
+   - Cliquez sur l’onglet **Settings** dans votre répertoire.
 
 3. **Faites Défiler jusqu’à GitHub Pages :**
    - Dans la section **Code and automation**, trouvez le lien **Pages**.
@@ -206,7 +206,7 @@ Ce guide explique comment lier votre site GitHub Pages à votre nom de domaine p
    - Assurez-vous que la case **Enforce HTTPS** est cochée. Cela garantira des connexions sécurisées.
 
 5. **Créer un Fichier `CNAME` (Optionnel mais Recommandé) :**
-   - Dans le répertoire racine de votre dépôt, créez un fichier nommé `CNAME`.
+   - Dans le répertoire racine de votre répertoire, créez un fichier nommé `CNAME`.
    - À l’intérieur du fichier `CNAME`, ajoutez votre nom de domaine personnalisé, par exemple :
      ```
      www.votrenom.com
