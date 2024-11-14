@@ -357,7 +357,7 @@ Bravo pour la première itération de votre site web ! Dans cette deuxième it
 
 ---
 
-## Étape 3 : Ajouter une section «Mes Projets» et intégrer le premier projet de session
+## Étape 3 : Ajouter une section «Mes Projets» et intégrer un projet de session
 
 Après la section «Mon CV», nous allons ajouter une nouvelle section nommée «Mes Projets». Notez que dans le code initial, il y a seulement 4 sections : «À propos», «Mon travail», «Mon CV», et «Me joindre». Vous devrez donc insérer cette cinquième section **entre «Mon CV» et «Me joindre»**.
 
@@ -418,18 +418,18 @@ Après la section «Mon CV», nous allons ajouter une nouvelle section nommée �
    </section>
    ```
 
-### 2. Préparer le document Rmarkdown
+### 2. Préparer le document R Markdown
 
 1. **Créez un dossier nommé `projet_session`** dans votre répertoire GitHub :
-   - Ce dossier contiendra le fichier markdown et les ressources associées à votre projet de session.
+   - Ce dossier contiendra le fichier R Markdown et les ressources associées à votre projet de session.
 
-2. **Dans le dossier `projet_session`, enregistrer un fichier markdown nommé `projet.Rmd`**
-   - Vous pouvez utiliser un gabarit markdown trouvé en ligne ou démarrer d'une page blanche via RStudio.
+2. **Dans le dossier `projet_session`, enregistrer un fichier R Markdown nommé `projet.Rmd`**
+   - Vous pouvez utiliser un gabarit R Markdown trouvé en ligne ou démarrer d'une page blanche via RStudio.
    - Pour créer une fichier R Markdown sur RStudio, cliquez sur «Files», «New File», puis «R Markdown...»
      
 ![Capture d’écran, le 2024-11-13 à 18 29 22](https://github.com/user-attachments/assets/138d6800-5182-4f73-ba88-f632b01a9e75)
 
-3. **Exportez le fichier markdown en HTML** :
+3. **Exportez le fichier R Markdown en HTML** :
    - Vous pouvez vider le contenu par défaut de cette page, ou conserver l'en-tête, au choix.
    - L'important sera d'exporter le résultat (on dit « knit », en langage Markdown) en format html et de l'enregistrer dans votre dossier `projet_session`
    - Une fois le fichier `projet.md` complété, exportez-le en HTML et nommez ce fichier `projet.html`.
@@ -439,11 +439,11 @@ Après la section «Mon CV», nous allons ajouter une nouvelle section nommée �
 
 4. **Vérifiez l’affichage de votre site** :
    - Enregistrez et poussez vos modifications sur GitHub.
-   - Allez à la section «Mes Projets» pour vérifier que l’image d’aperçu est bien affichée et que le lien mène au contenu du projet en HTML.
+   - Allez à la section « Mes Projets » pour vérifier que l’image d’aperçu est bien affichée et que le lien mène au contenu du projet en HTML.
 
-### 3. Remplir le document Rmarkdown
+### 3. Remplir le document R Markdown
 
-Dans cette étape, vous allez réaliser un court projet de session dans votre page HTML de projet (écrite en markdown) qui démontrera votre capacité à utiliser différents outils de recherche tout au long du cycle de la recherche, tel que représenté dans l'image du cycle de recherche hypothético-déductif issue de la méthode scientifique.
+Dans cette étape, vous allez réaliser un court projet de session dans votre page HTML de projet (écrite en R Markdown) qui démontrera votre capacité à utiliser différents outils de recherche tout au long du cycle de la recherche, tel que représenté dans l'image du cycle de recherche hypothético-déductif issue de la méthode scientifique.
 
 En fonction des étapes indiquées dans l'image et vues en classe, suivez les consignes ci-dessous pour structurer votre projet de session.
 
@@ -454,7 +454,7 @@ En fonction des étapes indiquées dans l'image et vues en classe, suivez les co
 1. **Question de recherche et hypothèse** :
    - Posez une question de recherche.
    - Effectuez une brève revue de la littérature scientifique pour dériver une hypothèse de recherche en lien avec votre question.
-   - **Indiquez les outils utilisés** pour cette étape (ex. Google Scholar, Zotero, Elicit, etc.) et détaillez comment vous les avez utilisés (par exemple, pour trouver des articles, organiser des sources, etc.).
+   - **Indiquez les outils utilisés** pour cette étape (ex. Google Scholar, Zotero, Elicit, etc.) et détaillez pourquoi et comment vous les avez utilisés (par exemple, pour trouver des articles, organiser des sources, etc.).
 
 2. **Collecte de données** :
    - Choisissez un outil pour collecter des données en lien avec votre hypothèse (ex. Factiva, Eureka, un questionnaire en ligne, une base de données en libre accès, etc., des données extraites du Web, etc.).
@@ -471,6 +471,10 @@ En fonction des étapes indiquées dans l'image et vues en classe, suivez les co
 #### Important
 
 Il n'y a pas de bonne ou mauvaise réponse pour ce travail. L'objectif est de démontrer votre capacité à utiliser des outils numériques de recherche tout au long d'un processus de recherche, de la réflexion sur une question jusqu'à la présentation des résultats. Ce travail doit refléter votre compréhension et votre maîtrise des outils ainsi que la manière dont vous les avez intégrés dans le cycle de la recherche.
+
+### 4. Ajoutez tous les fichiers pertinents à votre répertoire GitHub
+
+Votre dossier `projet_session` devrait contenir un dossier `code` à l'intérieur duquel se retrouvent les codes R (si vous utilisez cet outil, par exemple) créés pour l'analyse et la visualisation de données. Il pourrait y avoir également un dossier `data`, dans lequel se retrouvent les données collectées, et un dossier `images` dans lequel se trouvent vos graphiques et vos visualisations. Peu importe les outils choisis, assurez-vous que tout le contenu pertinent à l'évaluation de votre travail se retrouve dans le dossier `projet_session` de votre repo GitHub.
 
 ---
 
