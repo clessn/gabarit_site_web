@@ -466,7 +466,8 @@ En fonction des étapes indiquées dans l'image et vues en classe, suivez les co
 
 4. **Discussion** :
    - Ajoutez une section de discussion à la fin de votre projet.
-   - Dans cette discussion, **expliquez vos choix d'outils** et les valeurs ou la philosophie qui ont guidé vos décisions. Basez-vous, entre autres, sur les critères de sélection des outils vus en classe: l'accessibilité, l'existence d'une communauté d'utilisateurs, la popularité dans votre domaine, leur compatibilité avec d'autres outils, la transparence et la réplicabilité, et leur adaptabilité et flexibilité).
+   - Dans cette discussion, expliquez vos choix d'outils en fonction **des valeurs, de la philosophie ou des besoins** qui ont guidé vos décisions.
+   -  Basez-vous, entre autres, sur les critères de sélection des outils vus en classe: l'accessibilité, l'existence d'une communauté d'utilisateurs, la popularité dans votre domaine, leur compatibilité avec d'autres outils, le besoin de transparence et la réplicabilité, et la capacité d'adaptabilité et de flexibilité des outils.
 
 #### Important
 
