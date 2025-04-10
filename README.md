@@ -1,16 +1,13 @@
-
 # Créer votre site web avec GitHub Pages
 
-Bienvenue ! Ce guide vous expliquera comment utiliser GitHub Pages pour créer votre propre site web personnel en utilisant un template HTML. 
+Bienvenue ! Ce guide vous expliquera comment utiliser GitHub Pages pour créer votre propre site web personnel en utilisant n'importe quel template HTML. 
 Suivez attentivement chaque étape, même si vous n'êtes pas familier avec GitHub.
 
 ## Prérequis
 
 - Avoir un compte GitHub. Si vous n'en avez pas encore, créez-en un sur [github.com](https://github.com).
-- Avoir Git installé sur votre ordinateur. Vous pouvez télécharger Git [ici](https://git-scm.com/downloads) si ce n’est pas déjà fait.
+- Avoir Git installé sur votre ordinateur. Vous pouvez télécharger Git [ici](https://git-scm.com/downloads) si ce n'est pas déjà fait.
 - Un éditeur de texte comme RStudio ou Visual Studio Code pour modifier le code HTML.
-
----
 
 ## Étape 1: Créer un répertoire GitHub Pages
 
@@ -19,8 +16,6 @@ Suivez attentivement chaque étape, même si vous n'êtes pas familier avec GitH
 3. Sélectionnez **Create a new repository**
 4. Dans la section **Repository name**, entrez votre nom d'utilisateur suivi de `.github.io`. Par exemple, si votre nom d'utilisateur est `joebloe`, nommez le répertoire `joebloe.github.io`. Cela est essentiel pour que GitHub reconnaisse votre site.
 5. Assurez-vous que le répertoire est **Public** et cliquez sur **Create repository**.
-
----
 
 ## Étape 2: Cloner le répertoire sur votre ordinateur
 
@@ -42,113 +37,80 @@ Vous allez maintenant copier le répertoire sur votre machine pour pouvoir le mo
    cd username.github.io
    ```
 
----
+## Étape 3: Personnaliser votre site
 
-## Étape 3: Modifier le fichier HTML
+Maintenant que vous avez cloné le répertoire sur votre machine, vous pouvez modifier les fichiers pour y ajouter vos informations personnelles. 
+Vous pouvez utiliser RStudio, Visual Studio Code, ou tout autre éditeur de texte pour éditer les fichiers.
 
-Maintenant que vous avez cloné le répertoire sur votre machine, vous pouvez modifier le fichier HTML pour y ajouter vos informations personnelles.
-Vous pouvez utiliser RStudio pour éditer le code HTML, ou tout autre éditeur de texte.
-Ouvrez le fichier index.html dans votre éditeur de texte.
-Il est bon de savoir que le nom du fichier index.html est important, car c'est le fichier qui sera affiché par défaut lorsque quelqu'un visite votre site.
-Les navigateurs web cherchent automatiquement un fichier index.html dans le répertoire racine d'un site web.
+Le fichier principal à modifier est généralement `index.html`, car c'est le fichier qui sera affiché par défaut lorsque quelqu'un visite votre site.
+Les navigateurs web cherchent automatiquement un fichier `index.html` dans le répertoire racine d'un site web.
 
-### Modifications à apporter
+### Éléments à personnaliser
+
+Voici les éléments que vous devriez généralement personnaliser dans votre template, quel qu'il soit :
 
 #### 1. Le titre du site
 
-Dans le fichier `index.html`, trouvez cette ligne :
+Recherchez la balise `<title>` dans le fichier HTML principal. Cette balise détermine ce qui apparaîtra dans l'onglet de votre navigateur.
 
 ```html
-<title>Ce qui va apparaître dans la tab de votre site</title>
+<title>Votre titre ici</title>
 ```
 
-Remplacez le texte entre les balises `<title>` par le titre que vous souhaitez pour votre site. 1Ce texte apparaîtra dans l'onglet de votre navigateur.
+#### 2. Votre nom et informations personnelles
 
-#### 2. Votre nom et description
+Recherchez les sections qui contiennent des informations personnelles comme votre nom, votre métier ou votre description personnelle. Dans la plupart des templates, ces informations se trouvent dans les sections d'en-tête (`header`) ou d'introduction.
 
-Dans la section `header` du fichier HTML, modifiez les éléments suivants :
+#### 3. Vos photos ou images
 
-- **Nom** : Remplacez `VOTRE NOM` par votre propre nom.
+La plupart des templates incluent des emplacements pour des photos de profil ou des images d'arrière-plan. Remplacez ces images par les vôtres :
+
+1. Préparez vos propres images dans des formats web courants (JPG, PNG)
+2. Placez-les dans le dossier approprié (généralement `images/` ou `img/`)
+3. Mettez à jour les chemins dans le code HTML si nécessaire
+
+#### 4. Navigation et sections
+
+Personnalisez les sections de votre site selon vos besoins. Vous pouvez généralement :
+- Renommer les sections existantes
+- Ajouter ou supprimer des sections
+- Réorganiser l'ordre des sections
+
+#### 5. Liens vers vos réseaux sociaux
+
+Mettez à jour les liens vers vos profils de réseaux sociaux. Recherchez dans le code HTML les balises `<a>` avec des classes comme `fa-twitter`, `fa-linkedin`, etc.
 
 ```html
-<h1 id="logo"><a href="#">VOTRE NOM</a></h1>
+<a href="https://www.linkedin.com/in/votre-profil">LinkedIn</a>
 ```
 
-- **Description** : Écrivez une courte description de vous-même.
+#### 6. Contenu principal
+
+Personnalisez le contenu principal de votre site :
+- Votre biographie ou présentation
+- Vos compétences
+- Vos projets ou réalisations
+- Votre parcours académique et professionnel
+
+#### 7. Informations de contact
+
+Assurez-vous de mettre à jour vos informations de contact, notamment votre adresse e-mail :
 
 ```html
-<p>
-  Une courte description de vous<br />
-  Continuer la courte description
-</p>
+<a href="mailto:votre-email@example.com">Me contacter</a>
 ```
 
-#### 3. Votre photo
+#### 8. Stylisation et design
 
-Remplacez l'image de profil par une image de vous. Pour cela, vous devez remplacer le fichier `portrait.png` dans le dossier `images` par votre propre image et vous assurer que le nom du fichier est identique.
+Si vous souhaitez personnaliser davantage l'apparence de votre site, vous pouvez modifier les fichiers CSS (généralement dans un dossier `css/` ou `styles/`). Cela vous permettra de changer les couleurs, les polices, les espacements, etc.
 
-```html
-<img src="images/portrait.png" alt="" />
-```
+#### 9. Exploration du template
 
-#### 4. Sections de navigation
-
-Vous pouvez modifier les sections suivantes dans la barre de navigation :
-
-```html
-<li><a href="#one" class="active">À propos</a></li>
-<li><a href="#two">Mon travail</a></li>
-<li><a href="#three">Mon CV</a></li>
-<li><a href="#four">Contact</a></li>
-```
-
-Ces liens renvoient aux différentes sections de votre site. Vous pouvez modifier les noms des sections si vous le souhaitez.
-
-#### 5. Vos réseaux sociaux
-
-Modifiez les liens des réseaux sociaux dans la section `footer` :
-
-```html
-<a href="https://x.com/MLB/" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
-<a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
-<a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
-<a href="#" class="icon brands fa-github"><span class="label">Github</span></a>
-```
-
-Remplacez `href="#"` par le lien vers vos comptes de réseaux sociaux.
-
-#### 6. Texte de la page d'accueil
-
-Modifiez le texte dans la section suivante pour écrire quelque chose de personnel à propos de vous :
-
-```html
-<p>
-  Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus
-  col. Commodo id in arcu ante lorem ipsum sed accumsan erat
-  praesent faucibus commodo ac mi lacus. 
-</p>
-```
-
-#### 7. Section « Mes réalisations »
-
-Ajoutez vos propres projets ou réalisations dans la section `two` :
-
-```html
-<h3>Mes réalisations</h3>
-<p>Décrivez ici vos travaux ou projets.</p>
-```
-
-#### 8. Section « Me joindre »
-
-Trouvez cette ligne et modifiez-la pour ajouter votre propre adresse e-mail :
-
-```
-<a href="mailto:your-email@example.com?subject=Sujet&body=Votre message ici." class="button primary">`
-```
-
-#### 9. Personnalisation supplémentaire
-
-Vous pouvez personnaliser davantage le site en modifiant les couleurs, les polices, les images, etc. dans le fichier CSS `main.css`.
+Prenez le temps d'explorer et de comprendre la structure de votre template :
+- Identifiez les différents fichiers et leur rôle
+- Examinez comment les sections sont organisées
+- Notez les classes CSS importantes qui contrôlent le style
+- Recherchez les éventuels fichiers JavaScript qui contrôlent les fonctionnalités interactives
 
 ## Étape 4: Pousser les modifications sur GitHub
 
@@ -178,10 +140,10 @@ Votre site sera maintenant accessible à l'adresse `https://username.github.io`,
 
 Vous avez maintenant un site web fonctionnel hébergé gratuitement sur GitHub Pages. Vous pouvez y ajouter plus de contenu et personnaliser votre site autant que vous le souhaitez.
 
-N'hésitez pas à poser des questions si vous rencontrez des difficultés. Bonne chance !
+N'hésitez pas à poser des questions si vous rencontrez des difficultés. Bonne chance !
 
 
-## Étape 6: Bonus! Ajouter un nom de domaine personnalisé
+# Bonus : Ajouter un nom de domaine personnalisé
 
 Ce guide explique comment lier votre site GitHub Pages à votre nom de domaine personnalisé en utilisant Namecheap. Dans cet exemple, nous utiliserons le domaine `votrenom.com` comme domaine personnalisé.
 
@@ -228,7 +190,7 @@ Nous devons configurer les paramètres DNS sur Namecheap pour pointer votre doma
    - Allez dans le répertoire GitHub qui héberge votre site GitHub Pages.
 
 2. **Ouvrir les Paramètres du répertoire :**
-   - Cliquez sur l’onglet **Settings** dans votre répertoire.
+   - Cliquez sur l'onglet **Settings** dans votre répertoire.
 
 3. **Aller dans Pages :**
    - Dans la section **Code and automation**, trouvez le lien **Pages**.
@@ -238,12 +200,10 @@ Nous devons configurer les paramètres DNS sur Namecheap pour pointer votre doma
 
 5. **Créer un Fichier `CNAME` (Optionnel mais Recommandé) :**
    - Dans le répertoire racine de votre répertoire, créez un fichier nommé `CNAME`. Vous pouvez le faire directement sur GitHub.
-   - À l’intérieur du fichier `CNAME`, ajoutez votre nom de domaine personnalisé, par exemple :
+   - À l'intérieur du fichier `CNAME`, ajoutez votre nom de domaine personnalisé, par exemple :
      ```
      www.votrenom.com
      ```
-
-
 
 ### Étape 3 : Vérifier la Configuration
 
@@ -264,5 +224,71 @@ Nous devons configurer les paramètres DNS sur Namecheap pour pointer votre doma
 - [Documentation GitHub Pages Custom Domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
 - [Configuration DNS sur Namecheap](https://www.namecheap.com/support/knowledgebase/article.aspx/9776/2237/how-to-set-up-dns-records-for-your-domain-in-namecheap)
 
-Voilà ! Vous avez réussi à lier votre site GitHub Pages au domaine personnalisé `votrenom.com`.
+
+# Bonus : Créer un CV et l'ajouter à votre site
+
+## Étape 1 : Créer votre CV en PDF
+
+1. **Utilisez Quarto pour créer votre CV** : [Quarto CV](https://github.com/schochastics/quarto-cv) offre de nombreux templates modernes et professionnels pour créer facilement un CV. Vous pouvez choisir parmi plusieurs styles comme `awesome-cv`, `markdowncv`, `classic`, `moderncv`, et d'autres.
+
+2. **Installez Quarto et un template** : 
+
+   - Installez [Quarto](https://quarto.org/docs/download/) si ce n'est pas déjà fait
+   - Clonez ou téléchargez un template de votre choix depuis https://github.com/schochastics/quarto-cv
+   - Suivez les instructions du README pour utiliser le template
+
+3. **Complétez votre CV** : Remplissez le template avec vos informations en format YAML et Markdown. Quarto rend l'édition simple et intuitive.
+
+4. **Rendez votre CV en PDF** : Utilisez la commande `quarto render cv.qmd` pour générer un PDF de votre CV.
+
+5. **Ajoutez le PDF de votre CV à votre répertoire GitHub** :
+   - Créez un dossier nommé `cv` à la racine de votre répertoire GitHub.
+   - Placez votre CV en PDF dans ce dossier.
+   - Prenez une capture d'écran de la première page de votre CV et enregistrez-la dans le même dossier `cv`, sous le nom `cv.png` (cette image servira de solution de secours pour les navigateurs qui ne peuvent pas afficher le PDF intégré).
+  
+## Étape 2 : Intégrer votre CV en PDF à votre site
+
+Il existe plusieurs façons d'intégrer un PDF à votre site web, quelle que soit la template que vous utilisez. Voici une méthode universelle qui fonctionne avec n'importe quelle structure HTML :
+
+1. **Identifiez l'emplacement où vous souhaitez intégrer votre CV** :
+   - Dans votre fichier HTML, choisissez la section où vous voulez que votre CV apparaisse.
+   - Cela peut être une section dédiée au CV, ou vous pouvez créer une nouvelle section.
+
+2. **Intégrez le PDF à l'aide de la balise `<object>` ou `<iframe>` ** :
+
+   ```html
+   <!-- Méthode 1 : Utilisation de la balise object -->
+   <div style="width: 100%; height: 600px; overflow: auto; margin-bottom: 20px;">
+     <object data="cv/cv.pdf" type="application/pdf" width="100%" height="100%">
+       <p>Il semble que votre navigateur ne puisse pas afficher le PDF intégré. Vous pouvez <a href="cv/cv.pdf">télécharger le PDF</a> ou utiliser l'image d'aperçu ci-dessous.</p>
+       <img src="cv/cv.png" alt="Aperçu du CV" style="width: 100%;" />
+     </object>
+   </div>
+   
+   <!-- OU -->
+   
+   <!-- Méthode 2 : Utilisation de la balise iframe -->
+   <div style="width: 100%; height: 600px; margin-bottom: 20px;">
+     <iframe src="cv/cv.pdf" width="100%" height="100%" style="border: none;">
+       Votre navigateur ne supporte pas les iframes. Vous pouvez <a href="cv/cv.pdf">télécharger le PDF</a> directement.
+     </iframe>
+   </div>
+   ```
+
+3. **Ajoutez un lien de téléchargement direct** :
+
+   ```html
+   <p>
+     <a href="cv/cv.pdf" download>Télécharger mon CV</a>
+   </p>
+   ```
+
+4. **Adaptez le style à votre template** :
+   - Ajustez les styles CSS (largeur, hauteur, marges, etc.) pour que l'intégration s'harmonise avec votre design.
+   - Vous pouvez utiliser les classes CSS de votre template pour les boutons et autres éléments.
+
+5. **Vérifiez l'affichage sur différents navigateurs** :
+   - Les balises `<object>` et `<iframe>` se comportent différemment selon les navigateurs.
+   - L'approche avec la balise `<object>` permet d'afficher une solution de secours (l'image PNG) si le navigateur ne peut pas afficher le PDF.
+   - Testez votre site sur différents navigateurs pour vous assurer que le CV s'affiche correctement ou que l'alternative est visible.
 
