@@ -1,8 +1,9 @@
 
 # Créer votre site web avec GitHub Pages
 
-Bienvenue ! Ce guide vous expliquera comment utiliser GitHub Pages pour créer votre propre site web personnel en utilisant un template HTML. Suivez attentivement chaque étape, même si vous n'êtes pas familier avec GitHub.
-Faire un commit
+Bienvenue ! Ce guide vous expliquera comment utiliser GitHub Pages pour créer votre propre site web personnel en utilisant un template HTML. 
+Suivez attentivement chaque étape, même si vous n'êtes pas familier avec GitHub.
+
 ## Prérequis
 
 - Avoir un compte GitHub. Si vous n'en avez pas encore, créez-en un sur [github.com](https://github.com).
@@ -16,7 +17,7 @@ Faire un commit
 1. Connectez-vous à GitHub.
 2. Cliquez sur **"Use this template"** (bouton vert en haut à droite).
 3. Sélectionnez **Create a new repository**
-4. Dans la section **Repository name**, entrez votre nom d'utilisateur suivi de `.github.io`. Par exemple, si votre nom d'utilisateur est `johndoe`, nommez le répertoire `johndoe.github.io`. Cela est essentiel pour que GitHub reconnaisse votre site.
+4. Dans la section **Repository name**, entrez votre nom d'utilisateur suivi de `.github.io`. Par exemple, si votre nom d'utilisateur est `joebloe`, nommez le répertoire `joebloe.github.io`. Cela est essentiel pour que GitHub reconnaisse votre site.
 5. Assurez-vous que le répertoire est **Public** et cliquez sur **Create repository**.
 
 ---
@@ -25,7 +26,7 @@ Faire un commit
 
 Vous allez maintenant copier le répertoire sur votre machine pour pouvoir le modifier.
 
-1. Sur la page de votre répertoire (par exemple, `https://github.com/johndoe/johndoe.github.io`), cliquez sur le bouton vert **Code**.
+1. Sur la page de votre répertoire (par exemple, `https://github.com/joebloe/joebloe.github.io`), cliquez sur le bouton vert **Code**.
 2. Copiez le lien du répertoire.
 3. Ouvrez une fenêtre de terminal (ou Git Bash si vous êtes sur Windows) et tapez la commande suivante pour cloner le répertoire dans un dossier sur votre ordinateur :
    
@@ -90,8 +91,6 @@ Remplacez l'image de profil par une image de vous. Pour cela, vous devez remplac
 <img src="images/portrait.png" alt="" />
 ```
 
-Si vous nommez l'image différemment, modifiez également la ligne ci-dessus avec le nouveau nom de fichier.
-
 #### 4. Sections de navigation
 
 Vous pouvez modifier les sections suivantes dans la barre de navigation :
@@ -151,8 +150,6 @@ Trouvez cette ligne et modifiez-la pour ajouter votre propre adresse e-mail :
 
 Vous pouvez personnaliser davantage le site en modifiant les couleurs, les polices, les images, etc. dans le fichier CSS `main.css`.
 
----
-
 ## Étape 4: Pousser les modifications sur GitHub
 
 Une fois que vous avez fait toutes les modifications, vous devez les envoyer sur GitHub pour que votre site soit mis à jour.
@@ -167,8 +164,6 @@ git push origin main
 
 Cela enverra vos modifications sur GitHub.
 
----
-
 ## Étape 5: Activer GitHub Pages
 
 1. Allez sur la page de votre répertoire sur GitHub.
@@ -179,13 +174,9 @@ Cela enverra vos modifications sur GitHub.
 
 Votre site sera maintenant accessible à l'adresse `https://username.github.io`, où `username` est votre nom d'utilisateur GitHub.
 
----
-
 ### Félicitations !
 
 Vous avez maintenant un site web fonctionnel hébergé gratuitement sur GitHub Pages. Vous pouvez y ajouter plus de contenu et personnaliser votre site autant que vous le souhaitez.
-
----
 
 N'hésitez pas à poser des questions si vous rencontrez des difficultés. Bonne chance !
 
@@ -275,15 +266,3 @@ Nous devons configurer les paramètres DNS sur Namecheap pour pointer votre doma
 
 Voilà ! Vous avez réussi à lier votre site GitHub Pages au domaine personnalisé `votrenom.com`.
 
-# Critères d'évaluation
-
-- Site Web sur GitHub (30%)
-    - Le site web est hébergé sur GitHub, et le répertoire est accessible.
-    - Les commits sont visibles et montrent un suivi régulier du travail effectué.
-- Respect des étapes et des modifications demandées (60%)
-    - L'étudiant.e a suivi les étapes du ReadMe.
-    - Les sections essentielles ont été complétées et modifiées correctement.
-    - Le contenu du site est pertinent par rapport aux objectifs du projet.
-- Personnalisation avancée (10%)
-    - L'étudiant.e ont personnalisé leur site (changement de couleurs, utilisation d’un autre template, ajustements spécifiques à leurs besoins).
-    - Les modifications vont au-delà des consignes de base, démontrant une initiative supplémentaire.
