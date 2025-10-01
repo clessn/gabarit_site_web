@@ -292,3 +292,15 @@ Il existe plusieurs façons d'intégrer un PDF à votre site web, quelle que soi
    - L'approche avec la balise `<object>` permet d'afficher une solution de secours (l'image PNG) si le navigateur ne peut pas afficher le PDF.
    - Testez votre site sur différents navigateurs pour vous assurer que le CV s'affiche correctement ou que l'alternative est visible.
 
+# Critères d'évaluation (cours d'outils numériques POL-6078)
+
+- Site Web sur GitHub (30%)
+    - Le site web est hébergé sur GitHub, et le répertoire est accessible.
+    - Les commits sont visibles et montrent un suivi régulier du travail effectué.
+- Respect des étapes et des modifications demandées (50%)
+    - L'étudiant.e a suivi les étapes du ReadMe.
+    - Les sections essentielles ont été complétées et modifiées correctement.
+    - Le contenu du site est pertinent par rapport aux objectifs du cours.
+- Personnalisation avancée (20%)
+    - L'étudiant.e a personnalisé son site (changement de couleurs, utilisation d’un autre template, ajustements spécifiques à ses besoins).
+    - Les modifications vont au-delà des consignes de base, démontrant une initiative supplémentaire.
