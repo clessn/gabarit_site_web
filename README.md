@@ -45,7 +45,7 @@ Vous pouvez utiliser RStudio, Visual Studio Code, ou tout autre éditeur de text
 Le fichier principal à modifier est généralement `index.html`, car c'est le fichier qui sera affiché par défaut lorsque quelqu'un visite votre site.
 Les navigateurs web cherchent automatiquement un fichier `index.html` dans le répertoire racine d'un site web.
 
-À noter: si vous ne souhaitez pas utiliser le modèle déjà présent dans index.html, il existe une multitude de modèle gratuit sur le Web! Visitez par exemple:
+À noter: si vous ne souhaitez pas utiliser le modèle déjà présent dans index.html, il existe une multitude de modèles gratuits sur le Web! Visitez par exemple:
 
 - https://html5up.net/ (le modèle proposé vient de ce site);
 - https://huggingface.co/spaces/enzostvs/deepsite (pour générer votre site Web par IA).
